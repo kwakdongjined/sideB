@@ -282,6 +282,93 @@ button:active {
   transform: scale(0.98);
 }
 
+/* --- 제휴 문의 폼 --- */
+.partnership {
+  background: var(--color-bg-primary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.partnership-intro {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.partnership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.partnership-form label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.partnership-form .required {
+  color: #c0392b;
+  margin-left: 2px;
+}
+
+.partnership-form input,
+.partnership-form select,
+.partnership-form textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  background: var(--color-bg-page);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  width: 100%;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.partnership-form input:focus,
+.partnership-form select:focus,
+.partnership-form textarea:focus {
+  outline: none;
+  border-color: var(--color-text-info);
+  background: var(--color-bg-primary);
+}
+
+.partnership-form textarea {
+  resize: vertical;
+  min-height: 88px;
+  line-height: 1.5;
+}
+
+.submit-btn {
+  margin-top: 6px;
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  border: 0.5px solid var(--color-text-primary);
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
 /* --- 푸터 --- */
 .footer {
   font-size: 12px;
@@ -305,6 +392,10 @@ button:active {
   }
 
   .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid-2 {
     grid-template-columns: 1fr;
   }
 }

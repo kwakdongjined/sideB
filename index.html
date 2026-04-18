@@ -107,6 +107,60 @@
     <button data-action="calculator">급여량 계산기 ↗</button>
   </div>
 
+  <!-- 제휴 문의 -->
+  <h2>제휴 문의</h2>
+  <section class="partnership">
+    <p class="partnership-intro">동물병원, 애견카페, 애견 유치원 등 반려동물 업계 파트너를 찾습니다.<br>아래 폼을 작성해 주시면 영업일 기준 2일 이내 연락드려요.</p>
+    <form class="partnership-form" action="https://formspree.io/f/xvzdayov" method="POST">
+      <div class="form-row">
+        <label for="p-business">상호 / 업체명 <span class="required">*</span></label>
+        <input type="text" id="p-business" name="business" required placeholder="예) 해피 동물병원">
+      </div>
+
+      <div class="form-row">
+        <label for="p-type">업종 <span class="required">*</span></label>
+        <select id="p-type" name="business_type" required>
+          <option value="">선택해 주세요</option>
+          <option value="동물병원">동물병원</option>
+          <option value="애견카페">애견카페</option>
+          <option value="애견유치원">애견 유치원</option>
+          <option value="애견호텔">애견 호텔</option>
+          <option value="펫샵">펫샵</option>
+          <option value="기타">기타</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="p-name">담당자 성함 <span class="required">*</span></label>
+        <input type="text" id="p-name" name="name" required placeholder="홍길동">
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label for="p-phone">연락처 <span class="required">*</span></label>
+          <input type="tel" id="p-phone" name="phone" required placeholder="010-1234-5678">
+        </div>
+        <div class="form-row">
+          <label for="p-email">이메일</label>
+          <input type="email" id="p-email" name="email" placeholder="name@example.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="p-region">지역</label>
+        <input type="text" id="p-region" name="region" placeholder="예) 경북 경산시">
+      </div>
+
+      <div class="form-row">
+        <label for="p-message">문의 내용</label>
+        <textarea id="p-message" name="message" rows="4" placeholder="제휴 방식, 규모, 기대사항 등을 자유롭게 남겨주세요."></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="[도거박스] 신규 제휴 문의">
+      <button type="submit" class="submit-btn">문의 보내기</button>
+    </form>
+  </section>
+
   <p class="footer">경상북도 경산시 · 2018년 설립 · doggerbox.com</p>
 
 </div>
